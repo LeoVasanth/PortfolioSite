@@ -1,0 +1,18 @@
+﻿
+
+@{
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+<section id="login" >
+    <div class="login container">
+        <div>
+            <h1>Login Details</h1>
+            <label>User</label>
+            <input type="text" value="user" ng-model="Usr" placeholder="user" >
+            <label>Password</label>
+            <input type="password" value="pwd" ng-model="Pwd" placeholder="password" >
+            <input type="submit" ng-click="Login()" value="Login" >
+        </div>
+    </div>
+</section>

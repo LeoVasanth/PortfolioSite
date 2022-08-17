@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My person Site</title>
+    <link href="~/Content/css/StyleSheet.css" rel="stylesheet" />
+
+</head>
+
+<body onscroll="HeaderBg()" ng-app="MyApp" ng-controller="MyCntrl">
+    <!-- Header section  -->
+    <section id=header>
+        <div class="header container">
+            <div class="navbar">
+                <div class="brand">
+                    <a href="#"><h1><span>V</span>asanth <span>D</span>uraipandi</h1></a>
+                </div>
+                <div class="navlist">
+                    <div class="hamburger" onclick="ToggleHamburger()">
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="mm">
+                        <li>>@Html.ActionLink("Home", "Index", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- End of Header Section -->
+    @RenderBody()
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
+    <script src="~/Content/js/app.js"></script>
+    <script src="~/Content/js/site.js"></script>
+
+</body>
+</html>

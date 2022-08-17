@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- cover section -->
+<section id="cover">
+    <div class="cover container">
+        <div class="cover-content">
+            <h1>Hello</h1>
+            <h1>I'm</h1>
+            <h1><span class="red">Vasanth</span></h1>
+            <a href="#contact" type="button" class="btn">Contact me </a>
+        </div>
+    </div>
+</section>
+<!-- end of cover section -->
+<!-- About section -->
+<section id="about">
+    <div class="about container">
+        <div class="about-pic">
+            <img src="~/Content/images/MyPic_new.jpg" />
+        </div>
+        <div class="about-content">
+            <h1>About me</h1>
+            <p>
+                It had become a far too common an event in her life. She has specifically placed the key to the box in a special place so that she wouldn't lose it and know exactly where it was when the key was needed.
+            </p>
+            <p>Now that she needed to open the box, she had absolutely no idea where that special spot she placed the key might be.</p>
+
+        </div>
+    </div>
+
+</section>
+<!-- End of about section -->
+<!-- Contact -->
+<section id="contact">
+    <div class="contact container">
+        <div class="contact-details">
+            <div class="address cd">
+                <h1>Contact Details</h1>
+                <span><img src="https://img.icons8.com/material/24/000000/address.png" /></span>
+                <p>
+                    1, Karunanidhi Nagar  <br>5th Street, Adyar <br>Chennai
+                    <br>Tamil Nadu
+                    <br>Pincode-600054
+                </p>
+            </div>
+            <div class="social cd">
+                <a href="#"> <img src="https://img.icons8.com/material/24/000000/instagram-new--v1.png" /></a>
+                <a href="#"> <img src="https://img.icons8.com/material/24/000000/facebook-new.png" /></a>
+                <a href="#"><img src="https://img.icons8.com/material/24/000000/twitter--v1.png" /></a>
+            </div>
+
+        </div>
+        <div class="contact-form">
+            <h1>Send Message</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" ng-model="Name" placeholder="Your name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" ng-model="Email" placeholder="Your email..">
+
+            <label for="message">Message</label>
+            <textarea rows="5" cols="30" name="description" ng-model="Message" placeholder="Enter details here"></textarea>
+            <input type="submit" ng-click="TestHello()" value="Submit">
+
+        </div>
+    </div>
+</section>
+<!-- End of contact -->
